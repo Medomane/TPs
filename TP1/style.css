@@ -1,0 +1,26 @@
+img{
+  opacity : 0.8 ;
+}
+img:hover{
+  opacity: 1 ;
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}
+td{
+  height :50px;
+  padding: 0px;
+}
+td img{
+  height :50px;
+}
+.pdiv{
+  position:fixed;
+  bottom:0px;
+  height: 100%;width:100%;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.5)
+}
+.ddiv{
+  margin: auto;
+  max-width:300px;
+}

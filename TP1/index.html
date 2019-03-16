@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Users</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <h1>Users List</h1>
+        <button class="btn btn-success mb-1" onclick="toggle(this)">Table</button>
+        <div class="users">
+            <div class="row">
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="gabaris" style="display:none">
+      <div class="col-md-4 user">
+        <div class="card" style="overflow: hidden;">
+          <img src="" class="card-img-top rounded" alt="">
+          <div class="card-body">
+            <h5 class="card-title name">Tot momo</h5>
+            <p class="card-text email"></p>
+            <button class="btn btn-primary btn-block">Accéder</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="tbl" style="display:none;">
+      <div class="user col-12 row" style="width:100%;margin: auto;margin-bottom: 5px;">
+        <div class="col-1"><img src="" class="rounded" alt="" height="40px"></div>
+        <div class="col-4 name"></div>
+        <div class="col-6 email"></div>
+        <button class="btn btn-primary col-1 fa fa-edit"></button>
+      </div>
+    </div>
+
+    <!-- Formule de modification -->
+    <div id="mod" class="pdiv" style="display: none;">
+      <button class="close p-3">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <form accept-charset="utf-8" class="card ddiv mt-5" style="overflow: hidden;">
+        <img src="" class="card-img-top rounded" alt="">
+        <div class="card-body form-group">
+          <label>Nom :</label>
+          <input type="text" class="form-control name" placeholder="Nom" required="true">
+          <small class="form-text text-muted name"></small>
+          <label>Email :</label>
+          <input type="email" placeholder="email" class="email form-control" required="true">
+          <small class="form-text text-muted email"></small>
+          <button id="sub" class="btn btn-primary mt-1">Modifier</button>
+        </div>
+      </form>
+    </div>
+
+
+
+    <script src="users.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js.js"></script>
+
+  </body>
+</html>
